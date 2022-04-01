@@ -1,0 +1,51 @@
+extends ../layouts/landingLayout.pug
+include ../mixins/landingMixin.pug
+include ../mixins/accountMixin.pug
+
+block headContent
+    +notisHead
+block content
+    .verify-content
+        .home-progress
+            .row.m-0.w-100
+                .col-10
+                    h2.home-progress-title أكمل إعدادات متجرك
+                    .home-progress-bar-parent.m-0 
+                        .home-progress-bar-inner(style="width:57%")
+                        h4
+                            span مكتمل
+                            span <div class="counter">57</div>% 
+            a.icon(href="#")
+                svg 
+                    use(href="../../assets/images/icons/icons.svg#arrow-left")
+        .bargains-content.mt-5
+            .dash-tabs
+                .nav-tabs-1  
+                    ul#myTab.nav.nav-tabs(role='tablist')
+                        li.nav-item(role='presentation').mb-3.mb-md-0
+                            button#Voucher-data-tab.nav-link.active.me-3(data-bs-toggle='tab' data-bs-target='#Voucher-data' type='button' role='tab' aria-controls='Voucher-data' aria-selected='true') التوثيق العادى
+                        li.nav-item(role='presentation')
+                            button#Voucher-Included-tab.nav-link(data-bs-toggle='tab' data-bs-target='#Voucher-Included' type='button' role='tab' aria-controls='Voucher-Included' aria-selected='false') التوثيق التجارى 
+                    #myTabContent.tab-content.mt-5
+                        #Voucher-data.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='Voucher-data-tab') 
+                            h4.fw-bold.text-center مرحبا بك 
+                            h6.text-center ساعدنا على توثيق حسابك من خلال البيانات التالية
+
+                            h5.my-4.text-center ارفق صورة المحل واضحة
+                            +upload_image_1({})
+                            .btn-submit-300.mt-5.text-center
+                                +Button({color:'orange' , name:'ارسال' , class:"btn-fill px-5" }) 
+
+                        #Voucher-Included.tab-pane.fade(role='tabpanel' aria-labelledby='Voucher-Included-tab') 
+                            h4.fw-bold.text-center مرحبا بك 
+                            h6.text-center ساعدنا على توثيق حسابك من خلال البيانات التالية
+
+                            h5.my-4.text-center ارفق صورة المحل واضحة
+                            .row.w-100.m-0 
+                                .col-md-6
+                                    +input({label:'رقم السجل'})
+                                .col-md-6 
+                                    +input({label:'تاريخ الانتهاء' , placeholder:'12 ﻧﻮﻗﻤﺒﺮ 2021' , type:'date'})
+                                
+                            .btn-submit-300.mt-5.text-center
+                                +Button({color:'orange' , name:'ارسال' , class:"btn-fill px-5" }) 

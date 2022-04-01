@@ -1,0 +1,183 @@
+extends ../layouts/landingLayout.pug
+include ../mixins/landingMixin.pug
+
+block headContent
+    +notisHead
+block content
+    .header
+        nav(aria-label="breadcrumb")
+            ol.breadcrumb
+                li.breadcrumb-item
+                    a(href="#") الرئيسية
+                li.breadcrumb-item اضافة صفقة
+    ul.nav.nav-tabs.d-none.mt-5
+        li.nav-item(role='presentation')
+            button#step-1-details-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#step-1-details' type='button' role='tab' aria-controls='step-1-details' aria-selected='true') Home
+        li.nav-item(role='presentation')
+            button#step-2-details-tab.nav-link(data-bs-toggle='tab' data-bs-target='#step-2-details' type='button' role='tab' aria-controls='step-2-details' aria-selected='false') Profile
+        li.nav-item(role='presentation')
+            button#step-3-details-tab.nav-link(data-bs-toggle='tab' data-bs-target='#step-3-details' type='button' role='tab' aria-controls='step-3-details' aria-selected='false') Messages
+
+    .add-product.cart-content 
+            .tab-content
+                #step-1-details.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='step-1-details-tab') 
+                    .add-product-body
+                        .add-product-title 
+                            h2 صور المنتج 
+                            p يمكنك إضافة صور بحد أقصى 4 صور للمنتج 
+                                span.textt-red.mr-2 مقاس 1080*1080
+                        .row.row-cols-1.mb-5.row-cols-sm-2.row-cols-md-4 
+                            .col 
+                                +upload_image_1({isMainImage:false})
+                            .col 
+                                +upload_image_1({isMainImage:false})
+                            .col 
+                                +upload_image_1({isMainImage:false})
+                            .col 
+                                +upload_image_1({isMainImage:false})
+                        .add-product-title
+                            h2 وصف المنتج
+                        +input_languages({ar: {label:'الإسم' , placeholder:'أكتب الإسم'}})
+                        
+                        .row.row-cols-1.row-cols-md-2 
+                            .col 
+                                +select({label:'القسم الرئيسي' , options:['إختر' , 'إختر' , 'إختر' , 'إختر']})
+                                a(href="" class="text-danger text-decoration-none mb-4 d-block" style="margin-top:-15px") تصنيف غير موجود (إضافة تصنيف جديد)
+                            .col 
+                                +select({label:'القسم الفرعي' , options:['إختر' , 'إختر' , 'إختر' , 'إختر']}) 
+                            .col 
+                                +input({label: 'حجم المنتج' , valueText:'كجم', type: 'number'})
+                            .col 
+                                +multiSelect({id:'TradeMark' , label:' العلامة التجارية' , options:'[{"label": "نستلة","value": "Nestle"},{"label": "جهينة","value": "Juhayna"}]'})
+                                
+                            .col 
+                                +input_number({label:'الكمية المتاحة' }) 
+                            .col 
+                                +input({label:'التكلفة المتوقعة للكمية المطلوبة' , valueText:'ريال'})
+
+                    .add-product-footer
+                        +Button({color:'orange' , name:'التالي ' , class:'ml-2 go-to-step-2' })
+                        +Button({color:'red' , name:'إلغاء ' })
+                #step-2-details.tab-pane.fade(role='tabpanel' aria-labelledby='step-2-details-tab') 
+                    .row
+                        .col-lg-9
+                            .products.mt-3
+                                +add_deal()
+                                +add_deal()
+                        .col-lg-9
+                            a.load-more-sec.mb-5 
+                                p اضافة منتج آخر
+                    .add-product-footer
+                        +Button({color:'orange' , name:'التالي ' , class:'ml-2 go-to-step-3' })
+                        +Button({color:'red' , name:'إلغاء ' })      
+                #step-3-details.tab-pane.fade(role='tabpanel' aria-labelledby='step-3-details-tab') 
+                    .add-product-body
+                        h4.my-4 عنوان التوصيل
+                        .row.w-100.m-0 
+                            .col-lg-4 
+                                +cardBox()
+
+                            .col-lg-4 
+                                +cardBox()
+                            
+                            .col-lg-2
+                                a.load-more-sec.h-100.m-0 
+                                    p اضافة عنوان جديد
+                                        .day-time.mt-5 
+                        .row.w-100.m-0
+                            .col-md-8
+                                .day-time.mt-5.mb-3
+                                    h4.mb-4 يوم ووقت التوصيل
+                                    .d-flex.justify-content-between.align-items-start
+                                        button.btn.btnn.hvr-shadow(data-bs-toggle='modal' data-bs-target='#dayModal')
+                                            svg 
+                                                use(href='../../assets/images/icons/icons.svg#calender')
+                                            span أختر يوم التوصيل
+                                            .arrow
+                                                svg 
+                                                    use(href='../../assets/images/icons/icons.svg#arrow-3')
+                                        button.btn.btnn.hvr-shadow(data-bs-toggle='modal' data-bs-target='#timeModal')
+                                            svg 
+                                                use(href='../../assets/images/icons/icons.svg#clock')
+                                            span أختر وقت التوصيل
+                                            .arrow
+                                                svg 
+                                                    use(href='../../assets/images/icons/icons.svg#arrow-3')
+                                +input_number({label:'مدة استقبال العروض لهذه الصفقة' }) 
+                                +input({label:'ملاحظاتك ' } , true)
+
+                    .add-product-footer
+                        +Button({color:'orange' , name:'اضافة الصفقة ' , class:'ml-2' , type:'submit' })
+                        +Button({color:'red' , name:'إلغاء ' })
+    
+    #dayModal.modal.fade(tabindex='-1' aria-labelledby='dayModalLabel' aria-hidden='true')
+        .modal-dialog
+            .modal-content.time-modal
+                .modal-header
+                    h5#timeModalLabel.modal-title 
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body.p-5
+                    .cansel-offer-modal.p-0 
+                        span.close(data-bs-toggle='modal' data-bs-target='#dayModal')
+                            svg 
+                                use(href='../../assets/images/icons/icons.svg#close')
+                        h5.fw-bold معاد التوصيل
+                        ul.p-0.m-0.w-100.payments-list-check.mt-4
+                            li.me-md-2
+                                input(type="radio" name="payment" class="active" id="day-1")
+                                label(for="day-1" class="active") 
+                                    .title اليوم 03/03/2022
+                                    .express 
+                                        p.m-0.fw-bold Express
+                                        span SR 20+
+                                        img(src="../../assets/images/landing/express.svg" alt="" class="img")
+
+                            li 
+                                input(type="radio" name="payment" id="day-2")
+                                label(for="day-2") 
+                                    .title غدا 22/4/2021
+                            li.me-md-2 
+                                input(type="radio" name="payment" id="day-3")
+                                label(for="day-3") 
+                                    .title الثلاثاء 22/4/2021
+                            li 
+                                input(type="radio" name="payment" id="day-4")
+                                label(for="day-4") 
+                                    .title الأربعاء 22/4/2021
+                        button.w-100.btnn-orange.btn-fill.btn.btnn.hvr-shadow(data-bs-toggle='modal' data-bs-target='#dayModal')
+                            span تم 
+    #timeModal.modal.fade(tabindex='-1' aria-labelledby='timeModalLabel' aria-hidden='true')
+        .modal-dialog
+            .modal-content.time-modal
+                .modal-header
+                    h5#timeModalLabel.modal-title 
+                    button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                .modal-body.p-5
+                    .cansel-offer-modal.p-0 
+                        span.close(data-bs-toggle='modal' data-bs-target='#timeModal')
+                            svg 
+                                use(href='../../assets/images/icons/icons.svg#close')
+                        h5.fw-bold وقت التوصيل
+                        ul.p-0.m-0.w-100.payments-list-check.mt-4
+                            li.me-md-2
+                                input(type="radio" name="payment" class="active" id="time-1")
+                                label(for="time-1" class="active") 
+                                    .title 10-12 صباحاَ
+                            li 
+                                input(type="radio" name="payment" id="time-2")
+                                label(for="time-2") 
+                                    .title 10-12 صباحاَ
+                            li.me-md-2 
+                                input(type="radio" name="payment" id="time-3")
+                                label(for="time-3") 
+                                    .title 10-12 صباحاَ 
+                            li 
+                                input(type="radio" name="payment" id="time-4")
+                                label(for="time-4") 
+                                    .title 10-12 صباحاَ
+                            li 
+                                input(type="radio" name="payment" id="time-4")
+                                label(for="time-4") 
+                                    .title 10-12 صباحاَ
+                        button.w-100.btnn-orange.btn-fill.btn.btnn.hvr-shadow(data-bs-toggle='modal' data-bs-target='#timeModal')
+                            span تم

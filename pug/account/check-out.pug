@@ -1,0 +1,16 @@
+extends ../layouts/landingLayout.pug
+include ../mixins/landingMixin.pug
+include ../mixins/accountMixin.pug
+
+block headContent
+    +notisHead
+block content
+    .order-success.text-center
+        .icon
+            svg
+                use(href="../../assets/images/icons/icons.svg#check")
+        h3.mt-5.fw-bold تم ارسال طلب التوثيق بنجاح
+        a(href="#")  سيتم مراجعته من قبل خدمة العملاء لدينا
+        
+        .comp-order.mt-4
+            +Button({color:'orange' , name:'الرجوع للرئيسية' , class:"btn-fill px-5" }) 
