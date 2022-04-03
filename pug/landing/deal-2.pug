@@ -22,7 +22,7 @@ block content
                 .col-lg-4 
                     +orderDetailsBox(' تاريخ ووقت الطلب ' , '   12 سبتمبر ، 2021 -  50:4 مساءً')
                 .col-lg-4 
-                    +orderDetailsBox('إجمالي الطلب' , ' 00.64 ريال')
+                    +orderDetailsBox('إجمالي الطلب' , ' 00.64 شيكل')
         hr.my-5.cus-hr
         .add-product-title 
             h2 تفاصيل التاجر 
@@ -36,7 +36,7 @@ block content
         - var actions = {isAvailableForMe:true}
         - var i = 0;
         while i < 4
-            - items.push([`<div class="table-img"><img src="../../assets/images/product-thumb.png" /></div>`, '<div class="table-two-texts"><h5>خضراوات مشكل</h5><h6>#54545454</h6></div>','<div class="table-two-texts"><h5>بقالة</h5><h6> خضراوات </h6></div>' , '<h5 class="textt-green">45 ريال</h5>' , '<h5><strong>5</strong></h5>']);
+            - items.push([`<div class="table-img"><img src="../../assets/images/product-thumb.png" /></div>`, '<div class="table-two-texts"><h5>خضراوات مشكل</h5><h6>#54545454</h6></div>','<div class="table-two-texts"><h5>بقالة</h5><h6> خضراوات </h6></div>' , '<h5 class="textt-green">45 شيكل</h5>' , '<h5><strong>5</strong></h5>']);
             - i++
         +table( {filters:false , fields , items , actions ,  headTitle: 'جميع الطلبات' , isInner: false , isDataTable:false })
 
@@ -48,7 +48,7 @@ block content
             .col 
                 +orderDetailsBox(' تاريخ ووقت الطلب ' , '   12 سبتمبر ، 2021 -  50:4 مساءً')
             .col 
-                +orderDetailsBox(' خيارات الشحن ' , ' خيارات الشحن  <b class="textt-red">50 ريال + 20 ريال توصيل سريع</b>')
+                +orderDetailsBox(' خيارات الشحن ' , ' خيارات الشحن  <b class="textt-red">50 شيكل + 20 شيكل توصيل سريع</b>')
         .add-product-title.pt-5 
             h2 ملاجظاتك
             p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء        
@@ -62,17 +62,17 @@ block content
                 ul.p-0.m-0 
                     li 
                         h5 السعر الفرعي 
-                        h6 350 ريال
+                        h6 350 شيكل
                     li 
                         h5 التوصيل
                             span.express Express 
-                        h6 350 ريال
+                        h6 350 شيكل
                     li 
                         h5 كوبون الخصم 
-                        h6 20 ريال
+                        h6 20 شيكل
                     li 
                         h5 إجمالي الطلبات
-                        h6.fw-bold 620 ريال
+                        h6.fw-bold 620 شيكل
                 hr
         .d-flex.justify-content-between.flex-wrap 
             .add-product-title

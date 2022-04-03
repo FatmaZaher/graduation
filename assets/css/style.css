@@ -160,7 +160,7 @@ body.menu-active:after {
 .auth-form .bottom-form-text h5 a {
   color: var(--main-color);
 }
-.auth-form .btn-submit button {
+.auth-form .btn-submit button, .auth-form .btn-submit a {
   background-color: var(--main-color);
   box-shadow: 0 6px 40px 0 rgba(253, 185, 51, 0.47);
   width: 100%;
@@ -389,7 +389,7 @@ body.menu-active:after {
   width: 100%;
   background: var(--main-color);
   border-radius: 50px;
-  color: #fff;
+  color: #fff !important;
   font-size: 1.3rem;
   max-width: 300px;
 }
@@ -836,6 +836,17 @@ div#valid-msg {
 .account-layout .account-navbar .right-side .coin span:nth-of-type(2) {
   color: #B4B4B4;
 }
+.dashboard-layout .dashbord-navbar .right-side .coin img,
+.dashboard-layout .landing-navbar .right-side .coin img,
+.dashboard-layout .account-navbar .right-side .coin img,
+.landing-layout .dashbord-navbar .right-side .coin img,
+.landing-layout .landing-navbar .right-side .coin img,
+.landing-layout .account-navbar .right-side .coin img,
+.account-layout .dashbord-navbar .right-side .coin img,
+.account-layout .landing-navbar .right-side .coin img,
+.account-layout .account-navbar .right-side .coin img {
+  width: 20px;
+}
 .dashboard-layout .dashbord-navbar .dash-actions,
 .dashboard-layout .landing-navbar .dash-actions,
 .dashboard-layout .account-navbar .dash-actions,
@@ -1097,7 +1108,8 @@ div#valid-msg {
   justify-content: space-between;
 }
 @media (max-width: 991.98px) {
-  .dashboard-layout #main .dash-sidebar, .dashboard-layout #main .account-sidebar,
+  .dashboard-layout #main .dash-sidebar,
+.dashboard-layout #main .account-sidebar,
 .landing-layout #main .dash-sidebar,
 .landing-layout #main .account-sidebar,
 .account-layout #main .dash-sidebar,
@@ -1111,7 +1123,8 @@ div#valid-msg {
     padding-top: 20px;
     overflow-y: scroll;
   }
-  .dashboard-layout #main .dash-sidebar .top-sidebar, .dashboard-layout #main .account-sidebar .top-sidebar,
+  .dashboard-layout #main .dash-sidebar .top-sidebar,
+.dashboard-layout #main .account-sidebar .top-sidebar,
 .landing-layout #main .dash-sidebar .top-sidebar,
 .landing-layout #main .account-sidebar .top-sidebar,
 .account-layout #main .dash-sidebar .top-sidebar,
@@ -1123,7 +1136,8 @@ div#valid-msg {
 .account-layout #main .sidbar-icon {
     display: block;
   }
-  .dashboard-layout #main.sidbar-active .dash-sidebar, .dashboard-layout #main.sidbar-active .account-sidebar,
+  .dashboard-layout #main.sidbar-active .dash-sidebar,
+.dashboard-layout #main.sidbar-active .account-sidebar,
 .landing-layout #main.sidbar-active .dash-sidebar,
 .landing-layout #main.sidbar-active .account-sidebar,
 .account-layout #main.sidbar-active .dash-sidebar,

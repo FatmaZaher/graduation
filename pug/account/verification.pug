@@ -6,18 +6,6 @@ block headContent
     +notisHead
 block content
     .verify-content
-        .home-progress
-            .row.m-0.w-100
-                .col-10
-                    h2.home-progress-title أكمل إعدادات متجرك
-                    .home-progress-bar-parent.m-0 
-                        .home-progress-bar-inner(style="width:57%")
-                        h4
-                            span مكتمل
-                            span <div class="counter">57</div>% 
-            a.icon(href="#")
-                svg 
-                    use(href="../../assets/images/icons/icons.svg#arrow-left")
         .bargains-content.mt-5
             .dash-tabs
                 .nav-tabs-1  
@@ -41,7 +29,8 @@ block content
                             h6.text-center ساعدنا على توثيق حسابك من خلال البيانات التالية
 
                             h5.my-4.text-center ارفق صورة المحل واضحة
-                            .row.w-100.m-0 
+                            +upload_image_1({})
+                            .row.w-100.m-0.mt-3 
                                 .col-md-6
                                     +input({label:'رقم السجل'})
                                 .col-md-6 

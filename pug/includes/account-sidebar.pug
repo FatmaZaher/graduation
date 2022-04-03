@@ -4,16 +4,15 @@ mixin listLinks(listSidebar)
         ul
             each listItem in listSidebar
                 li.mb-3
-                    a(href="#").d-flex.justify-content-between.align-items-center
+                    a(href=listItem.url).d-flex.justify-content-between.align-items-center
                         div.d-flex
-                            .icon 
+                            .icon  
                                 img(src="../../assets/images/account-menu/" + listItem.icon + ".svg" alt="")
                             span #{listItem.title} 
                         if listItem.number
                             .number.fw-bold #{listItem.number}
 
-
-- var listSidebar = [{"title":"اتابع","icon":"followers", "number": "646"},{"title":"طلب جديد","icon":"newOrder", "number": "0"},{"title":"نقاط مكافئة","icon":"points", "number": "66"},{"title":"الفروع","icon":"layer"},{"title":"طرق الدفع","icon":"credit"},{"title":"الدعم الفنى ","icon":"technical-support"},{"title":"الرسائل","icon":"comm"},{"title":" تعديل بياناتى","icon":"setting"}];
+- var listSidebar = [{"title":"طلباتي","icon":"newOrder", "url": "../account/home.html"},{"title":"الفروع","icon":"layer", "url": "../account/address.html"},{"title":"طرق الدفع","icon":"credit", "url": "../account/payments.html"},{"title":"الدعم الفنى ","icon":"technical-support", "url": "../account/technical-support.html"},{"title":" تعديل بياناتى","icon":"setting", "url": "../account/edit.html"}];
 
 .account-sidebar
     .top-sidebar 

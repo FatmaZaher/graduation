@@ -87,7 +87,7 @@
     }
   }
   .btn-submit {
-    button {
+    button, a {
       background-color: var(--main-color);
       box-shadow: 0 6px 40px 0 rgba(253, 185, 51, 0.47);
       width: 100%;
@@ -318,7 +318,7 @@
   width: 100%;
   background: var(--main-color);
   border-radius: 50px;
-  color: #fff;
+  color: #fff !important;
   font-size: 1.3rem;
   max-width: 300px;
 }

@@ -16,7 +16,7 @@ block content
                 .col-lg-4 
                     +orderDetailsBox('حالة العرض ' , 'منتظرة')
                 .col-lg-4 
-                    +orderDetailsBox('إجمالي العرض' , '64 ريال')
+                    +orderDetailsBox('إجمالي العرض' , '64 شيكل')
             hr
             .row
                 .col-lg-2 
@@ -38,7 +38,7 @@ block content
         - var actions = {isAvailableForMe:true}
         - var i = 0;
         while i < 4
-            - items.push([`<div class="table-img"><img src="../../assets/images/product-thumb.png" /></div>`, '<div class="table-two-texts"><h5>خضراوات مشكل</h5><h6>#54545454</h6></div>','<div class="table-two-texts"><h5>بقالة</h5><h6> خضراوات </h6></div>' , '<h5 class="textt-green">45 ريال</h5>' , '<h5><strong>5</strong></h5>']);
+            - items.push([`<div class="table-img"><img src="../../assets/images/product-thumb.png" /></div>`, '<div class="table-two-texts"><h5>خضراوات مشكل</h5><h6>#54545454</h6></div>','<div class="table-two-texts"><h5>بقالة</h5><h6> خضراوات </h6></div>' , '<h5 class="textt-green">45 شيكل</h5>' , '<h5><strong>5</strong></h5>']);
             - i++
 
         +table( {filters:false , fields , items , actions ,  headTitle: 'جميع الطلبات' , isInner: false , isDataTable:false })
@@ -48,11 +48,11 @@ block content
             h2 تفاصيل الشحن
         .row.row-cols-1.row-cols-md-2.align-items-end 
             .col 
-                +orderDetailsBox(' موعد اللشحن ' , '50 ريال + 20 ريال توصيل سريع')
+                +orderDetailsBox(' موعد اللشحن ' , '50 شيكل + 20 شيكل توصيل سريع')
             .col 
-                +orderDetailsBox(' خيارات الشحن ' , '<b class="textt-red">50 ريال + 20 ريال توصيل سريع</b> الشركة المتحدة للتوصيل')
+                +orderDetailsBox(' خيارات الشحن ' , '<b class="textt-red">50 شيكل + 20 شيكل توصيل سريع</b> الشركة المتحدة للتوصيل')
             .col 
-                +orderDetailsBox(' السعر للمنتجات المطلوبة  ' , '<b class="textt-green">35 ريال</b>')
+                +orderDetailsBox(' السعر للمنتجات المطلوبة  ' , '<b class="textt-green">35 شيكل</b>')
         .add-product-title.pt-5 
             h2 ملاجظاتك
         p هناك حقيقة مثبتة منذ زمن طويل وهي أن المحتوى المقروء لصفحة ما سيلهي القارئ عن التركيز على الشكل الخارجي للنص أو شكل توضع الفقرات في الصفحة التي يقرأها. ولذلك يتم استخدام طريقة لوريم إيبسوم لأنها تعطي توزيعاَ طبيعياَ -إلى حد ما- للأحرف عوضاً عن استخدام "هنا يوجد محتوى نصي، هنا يوجد محتوى نصي" فتجعلها تبدو (أي الأحرف) وكأنها نص مقروء
@@ -64,17 +64,17 @@ block content
                 ul.p-0.m-0 
                     li 
                         h5 السعر الفرعي 
-                        h6 350 ريال
+                        h6 350 شيكل
                     li 
                         h5 التوصيل
                             span.express Express 
-                        h6 350 ريال
+                        h6 350 شيكل
                     li 
                         h5 كوبون الخصم 
-                        h6 20 ريال
+                        h6 20 شيكل
                     li 
                         h5 إجمالي الطلبات
-                        h6.fw-bold 620 ريال
+                        h6.fw-bold 620 شيكل
                 hr
         .d-flex.justify-content-between.flex-wrap 
             .add-product-title

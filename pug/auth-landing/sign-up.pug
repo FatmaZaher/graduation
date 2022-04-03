@@ -1,0 +1,33 @@
+extends ../layouts/authLayout.pug
+
+block content 
+    .icon 
+        img(src="../../assets/images/icons/waving-hand.svg" alt="")
+    h1 مرحباً . قم بتسجيل حساب 
+    form(action="")
+        .input-text-icon-box.form-group 
+            span الاسم الأول :
+            input(type="text")
+
+        .input-text-icon-box.form-group 
+            span الاسم الأخير  :
+            input(type="text")
+
+        .input-text-icon-box.form-group 
+            span اﻟﺒﺮﻳﺪ اﻟﺎﻟﻜﺘﺮوﻧﻰ :
+            input(type="text")
+            
+        .input-text-icon-box.form-group 
+            span كلمة المرور 
+            input(type="password")
+
+        .input-text-icon-box.form-group 
+        
+            span تأكيد  كلمة المرور 
+            input(type="password")
+
+        #error-msg
+        #valid-msg
+        .btn-submit 
+            a(href="../auth-landing/confirm.html").btn.hvr-float-shadow
+                span تسجيل    

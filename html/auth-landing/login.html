@@ -30,24 +30,29 @@
             </div>
           </div>
           <div class="col"> 
-            <div class="auth-form">                 <a class="icon" href="../auth/login.html"> 
-                <svg> 
-                  <use href="../../assets/images/icons/icons.svg#arrow-right"></use>
-                </svg></a>
-              <h1>أدخل الكود الخاص بك  </h1>
+            <div class="auth-form">                 
+              <div class="icon"> <img src="../../assets/images/icons/waving-hand.svg" alt=""></div>
+              <h1>مرحباً . قم بتسجيل الدخول </h1>
               <form action="">
-                <input type="hidden" id="fullPin">
-                <div class="myPinCode">
-                  <input class="form-control" type="tel" maxlength="3">
-                  <input class="form-control" type="tel" maxlength="3">
-                  <input class="form-control" type="tel" maxlength="3">
-                  <input class="form-control" type="tel" maxlength="3">
+                <div class="input-text-icon-box form-group"> 
+                  <svg> 
+                    <use href="../../assets/images/icons/icons.svg#envelope"></use>
+                  </svg><span>اﻟﺒﺮﻳﺪ اﻟﺎﻟﻜﺘﺮوﻧﻰ :</span>
+                  <input type="text">
                 </div>
+                <div class="input-text-icon-box form-group"> 
+                  <svg> 
+                    <use href="../../assets/images/icons/icons.svg#key"></use>
+                  </svg><span>كلمة المرور : </span>
+                  <input type="password">
+                </div>
+                <div id="error-msg"></div>
+                <div id="valid-msg"></div>
                 <div class="btn-submit"> 
-                  <button class="btn hvr-float-shadow"> <span>تسجيل الدخول   </span></button>
+                  <button class="btn hvr-float-shadow"><span>تسجيل الدخول   </span></button>
                 </div>
                 <div class="bottom-form-text"> 
-                  <h5>ما اشتركت معنا بعد   <a href="">إشترك ألحين    </a></h5>
+                  <h5>ما اشتركت معنا بعد   <a href="../auth/sign-up.html">إشترك ألحين    </a></h5>
                 </div>
               </form>
             </div>

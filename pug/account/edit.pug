@@ -14,7 +14,7 @@ block content
                     h4
                         span مكتمل
                         span <div class="counter">57</div>% 
-        a.icon(href="#")
+        a.icon(href="./verification.html")
             svg 
                 use(href="../../assets/images/icons/icons.svg#arrow-left")
     .support-content
@@ -44,12 +44,6 @@ block content
         .form.mt-5
             .row.m-0.w-100.mt-5
                     .col-12.col-md-6
-                        .input-text-icon-box.mb-3 
-                            svg 
-                                use(href="../../assets/images/icons/icons.svg#phone")
-                            span رقم الجوال
-                            input(type="text" id="phone" class="phone_number")
-                            input(type="hidden" id="fullNumber")
                         .input-text-icon-box.form-group 
                             svg 
                                 use(href="../../assets/images/icons/icons.svg#user-2")
@@ -60,15 +54,7 @@ block content
                             svg 
                                 use(href="../../assets/images/icons/icons.svg#envelope")
                             span اﻟﺒﺮﻳﺪ اﻟﺎﻟﻜﺘﺮوﻧﻰ :
-                            input(type="text")
-                        .login-with 
-                            a(href="")
-                                svg 
-                                    use(href="../../assets/images/icons/icons.svg#phone")
-
-                            a(href="")
-                                svg 
-                                    use(href="../../assets/images/icons/icons.svg#whatsapp")                 
+                            input(type="text")                
                         .btn-submit.mt-5 
                             +Button({color:'orange' , name:'حفظ التعديلات ', class:'btn-fill'}) 
             

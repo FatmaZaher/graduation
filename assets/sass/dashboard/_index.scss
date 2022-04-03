@@ -2,7 +2,6 @@
 .landing-layout,
 .account-layout {
 
-  // background: #f9fafc;
   .dashbord-navbar,
   .landing-navbar,
   .account-navbar {
@@ -116,6 +115,11 @@
         span:nth-of-type(2) {
           color: #B4B4B4;
         }
+
+        img {
+          width: 20px;
+        }
+
       }
 
     }
@@ -246,7 +250,9 @@
     justify-content: space-between;
 
     @media (max-width: 991.98px) {
-      .dash-sidebar,.account-sidebar {
+
+      .dash-sidebar,
+      .account-sidebar {
         height: 100%;
 
         .top-sidebar {
@@ -267,7 +273,9 @@
       }
 
       &.sidbar-active {
-        .dash-sidebar,.account-sidebar {
+
+        .dash-sidebar,
+        .account-sidebar {
           right: 0;
         }
       }
