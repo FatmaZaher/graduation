@@ -24,11 +24,11 @@ mixin table(table)
                 .btn-filter 
                     button.btn.hvr-shadow فلترة
             if table.filters.searchBox 
-            .table-search-box 
-                input(type="text" class="form-control")
-                .icon 
-                    svg
-                        use(href="../../assets/images/icons/icons.svg#search")
+                .table-search-box 
+                    input(type="text" class="form-control")
+                    .icon 
+                        svg
+                            use(href="../../assets/images/icons/icons.svg#search")
     .table-container(class=table.isInner ? 'inner-padding' : '')
         if table.buttons 
             .table-inner-head 

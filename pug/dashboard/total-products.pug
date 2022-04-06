@@ -2,7 +2,7 @@ extends ../layouts/dashboardLayout.pug
 block title 
     | جميع المنتجات
 block content 
-    +pageHead('إجمالي المنتجات <span>( 555 )</span>' , {url:'#' , title:'إضافى منتج جديد'})
+    +pageHead('إجمالي المنتجات <span>( 555 )</span>' , {url:'./add-product.html' , title:'إضافى منتج جديد'})
     .page-filters-2
         .inputs-btn
             +select({label:'' , options:['الأحدث' , 'إختر' , 'إختر' , 'الأحدث']})

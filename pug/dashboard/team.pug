@@ -2,7 +2,7 @@ extends ../layouts/dashboardLayout.pug
 block title 
     | ادارة الفريق
 block content 
-    +pageHead(' ادارة الفريق<span>( 555 )</span>' , {url:'#' , title:'اضافة موظف   '})
+    +pageHead(' ادارة الفريق<span>( 555 )</span>' , {url:'./add-team.html' , title:'اضافة موظف   '})
 
     - var buttons = [{class:'btn-active-disactive btnn-red' , name:'تسجيل خروج كل الموظفين  '} , {class:'btn-active-disactive btnn-orange' , name:'تعديل  '} , {class:'btn-active-disactive btnn-red' , name:'حذف '} , {class:'btn-active-disactive btnn-red' , name:'تعليق   '} ]
     - var fields = ['الاسم' , 'ﺗﺎرﻳﺦ اﻟﺎﻧﻀﻤﺎم ' , '  رﻗﻢ اﻟﻬﺎﺗﻒ' , ' نوع الصلاحيات '  , 'الإيميل', 'الإجراءات']
