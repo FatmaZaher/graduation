@@ -5,6 +5,7 @@ include ../mixins/accountMixin.pug
 block headContent
     +notisHead
 block content
+
     .home-progress
         .row.m-0.w-100
             .col-10
@@ -18,7 +19,7 @@ block content
             svg 
                 use(href="../../assets/images/icons/icons.svg#arrow-left")
 
-    +pageHead('اﻟﺤﺴﺎﺑﺎت اﻟﺒﻨﻜﻴﺔ اﻟﻤﻀﺎﻓﺔ  <span>( 555 )</span>' )
+    +pageHead('اﻟﺤﺴﺎﺑﺎت اﻟﺒﻨﻜﻴﺔ اﻟﻤﻀﺎﻓﺔ  <span>( 555 )</span>' ,  {url:'./add-payment.html' , title:'اﺿﺎﻓﺔ ﺣﺴﺎب ﺑﻨﻜﻰ   '})
 
     label.cover-card-sec(for="card")
         .form-check.form-switch.form-switch-md
@@ -40,12 +41,6 @@ block content
             .text
                 h2  البنك
                 h3 بنك فلسطين
-    .row.w-100.m-0 
-        .col-lg-10
-            a.load-more-sec
-                p اضافة عنوان جديد
-                    .day-time.mt-5 
-
 
 
 
