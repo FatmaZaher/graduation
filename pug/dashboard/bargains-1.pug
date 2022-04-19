@@ -39,8 +39,10 @@ block content
                                         span عرض الموقع
                                             svg 
                                                 use(href='../../assets/images/icons/icons.svg#' + 'marker')
-
-                                +Button({color:'orange' , name:'تفاصيل العميل' , class:'ml-2' , icon:'user'})
+                                a(href="../../html/dashboard/bargains-request-view.html").btnn-orange.btn.btnn.hvr-shadow
+                                    span تفاصيل العميل
+                                    svg 
+                                        use(href='../../assets/images/icons/icons.svg#user')
                         hr
                         .order-total 
                             ul 
@@ -64,8 +66,9 @@ block content
                                     h6 لا يوجد
                             hr
                         .center-action-btn 
-                            +Button({color:'orange' , name:'تقديم عرض للصفقة'})
-
+                            a(href="../../html/dashboard/bargains-request.html").btnn-orange.btn.btnn.hvr-shadow
+                                span تقديم عرض للصفقة
+  
                 #product-details.tab-pane.fade(role='tabpanel' aria-labelledby='product-details-tab') 
                     - var fields = ['المنتج' , 'الإسم' , 'القسم', 'السعر' , 'الكمية']
                     - var items = []
@@ -75,14 +78,16 @@ block content
                             - i++
                     .row.justify-content-center 
                         .col-lg-8
-                              +table( {filters:false , fields , items , headTitle: 'جميع الطلبات' , isInner: false , isDataTable:false })
+                            +table( {filters:false , fields , items , headTitle: 'جميع الطلبات' , isInner: false , isDataTable:false })
                     .row.justify-content-center 
                         .col-lg-10
-                             a.load-more-sec.mb-5 
+                            a.load-more-sec.mb-5 
                                     p هذه المنتجات متوفرة لديك ؟ قدم عرض الآن
 
                     .center-action-btn 
-                        +Button({color:'orange' , name:'تقديم عرض للصفقة'})
+                        a(href="../../html/dashboard/bargains-request.html").btnn-orange.btn.btnn.hvr-shadow
+                            span تقديم عرض للصفقة
+                        //- +Link({color:'orange' , name:'تقديم عرض للصفقة',class:'ml-2', url: '../../html/dashboard/bargains-request.html'})
                         
 
                 #mapModal.modal.fade(tabindex='-1' aria-labelledby='mapModalLabel' aria-hidden='true')

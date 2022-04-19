@@ -34,25 +34,18 @@
               <div class="icon"> <img src="../../assets/images/icons/waving-hand.svg" alt=""></div>
               <h1>مرحباً . قم بتسجيل الدخول </h1>
               <form action="">
-                <div class="input-text-icon-box form-group"> 
+                <div class="input-text-icon-box"> 
                   <svg> 
-                    <use href="../../assets/images/icons/icons.svg#envelope"></use>
-                  </svg><span>اﻟﺒﺮﻳﺪ اﻟﺎﻟﻜﺘﺮوﻧﻰ :</span>
-                  <input type="text">
-                </div>
-                <div class="input-text-icon-box form-group"> 
-                  <svg> 
-                    <use href="../../assets/images/icons/icons.svg#key"></use>
-                  </svg><span>كلمة المرور : </span>
-                  <input type="password">
+                    <use href="../../assets/images/icons/icons.svg#phone"></use>
+                  </svg><span>رقم الجوال</span>
+                  <input class="phone_number" type="text" id="phone">
+                  <input type="hidden" id="fullNumber">
                 </div>
                 <div id="error-msg"></div>
                 <div id="valid-msg"></div>
-                <div class="btn-submit"> 
-                  <button class="btn hvr-float-shadow"><span>تسجيل الدخول   </span></button>
-                </div>
+                <div class="btn-submit"> <a class="btn hvr-float-shadow" href="../../html/auth-landing/confirm.html"><span>تسجيل الدخول   </span></a></div>
                 <div class="bottom-form-text"> 
-                  <h5>ما اشتركت معنا بعد   <a href="../auth/sign-up.html">إشترك ألحين    </a></h5>
+                  <h5>ما اشتركت معنا بعد   <a href="../../html/auth-landing/sign-up.html">إشترك الآن    </a></h5>
                 </div>
               </form>
             </div>

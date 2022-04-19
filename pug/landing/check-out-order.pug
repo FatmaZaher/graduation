@@ -1,0 +1,33 @@
+extends ../layouts/landingLayout.pug
+include ../mixins/landingMixin.pug
+
+block content 
+    .order-success.text-center
+        .icon
+            svg
+                use(href="../../assets/images/icons/icons.svg#check")
+        h3.mt-5.fw-bold تم ترسية الطلب بنجاح
+        a(href="#") التاجر Grocery shope 
+        .order-total.mt-5
+            ul 
+                li 
+                    h5 عدد المنتجات
+                    h6 2
+                li 
+                    h5 اجمالى الطلب 
+                    h6 350 شيكل
+                li 
+                    h5 طريقة الدفع 
+                    h6 فيزا
+                li 
+                    h5 رقم الطلب
+                    h6 #646431
+            .comp-order.mt-4
+                a(href='../../html/landing/orders.html').btnn-orange.btn.btnn.hvr-shadow.btn-fill.px-5
+                    span تتبع الطلب 
+        .text-center.mt-5    
+            h3 لنا مكان فى كل دُ كان
+            p جميع عمليات الدفع والطلب لدينا مضمونة 100%     
+
+
+

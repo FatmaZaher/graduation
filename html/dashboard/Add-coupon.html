@@ -17,7 +17,7 @@
   <div class="dashboard-layout"> 
     <div class="dashbord-navbar"> 
       <div class="logo">  <img src="../../assets/images/logo.png" alt="alt"></div>
-      <div class="dash-breadcrumb"> 
+      <div class="dash-breadcrumb ms-4">
         <h1> جميع الطلبات
         </h1>
       </div>
@@ -70,10 +70,10 @@
                 <div class="list-links-group"> 
                   <h5>المنتجات</h5>
                   <ul>
-                    <li><a href="../dashboard/total-products.html">
+                    <li><a href="total-products.html">
                         <div class="icon"> <img src="../../assets/images/menu/Product_Package.svg" alt=""></div><span>المنتجات </span></a></li>
-                    <li><a href="../dashboard/add-product.html">
-                        <div class="icon"> <img src="../../assets/images/menu/plus.svg" alt=""></div><span>إضافة منتج </span></a></li>
+                    <li><a href="../dashboard/categories.html">
+                        <div class="icon"> <img src="../../assets/images/menu/plus.svg" alt=""></div><span>التصنيفات </span></a></li>
                   </ul>
                 </div>
                 <div class="list-links-group"> 
@@ -83,10 +83,13 @@
                         <div class="icon"> <img src="../../assets/images/menu/Shopping_Bag.svg" alt=""></div><span>الطلبات </span></a></li>
                     <li><a href="../dashboard/bargains.html">
                         <div class="icon"> <img src="../../assets/images/menu/Tag.svg" alt=""></div><span>الصفقات </span></a></li>
-                    <li><a>
-                        <div class="icon"> <img src="../../assets/images/menu/offer.svg" alt=""></div><span>عروض الصفقات  </span></a></li>
-                    <li><a>
-                        <div class="icon"> <img src="../../assets/images/menu/circular-diagram.svg" alt=""></div><span>التقارير  </span></a></li>
+                  </ul>
+                </div>
+                <div class="list-links-group"> 
+                  <h5>التسويق</h5>
+                  <ul>
+                    <li><a href="../dashboard/Abandoned-baskets.html">
+                        <div class="icon"> <img src="../../assets/images/menu/cart.svg" alt=""></div><span>السلات المتروكة </span></a></li>
                   </ul>
                 </div>
                 <div class="list-links-group"> 
@@ -94,6 +97,8 @@
                   <ul>
                     <li><a href="../dashboard/clients.html">
                         <div class="icon"> <img src="../../assets/images/menu/users.svg" alt=""></div><span>العملاء </span></a></li>
+                    <li><a href="../dashboard/chat.html">
+                        <div class="icon"> <img src="../../assets/images/menu/comm-chat.svg" alt=""></div><span>الرسائل </span></a></li>
                   </ul>
                 </div>
                 <div class="list-links-group"> 
@@ -143,13 +148,13 @@
                 </div>
                 <div class="code-generator-box">
                   <div class="form-group"> 
-                    <input class="form-control" type="text" id="input-389" placeholder="اﻛﺘﺐ اﻟﻜﻮد"/>
+                    <input class="form-control" type="text" id="input-986" placeholder="اﻛﺘﺐ اﻟﻜﻮد"/>
                   </div>
                 </div>
                 <div class="choose-amount">
                   <div class="form-group">
-                    <label for="input-534"> ﻧﻮع اﻟﺨﺼﻢ</label>
-                    <select class="niceselect" type="text" id="select-534">
+                    <label for="input-500"> ﻧﻮع اﻟﺨﺼﻢ</label>
+                    <select class="niceselect" type="text" id="select-500">
                       <option value="ﻣﺒﻠﻎ ﺛﺎﺑﺖ ﻣﻦ ﻣﺠﻤﻮع اﻟﻤﺸﺘﺮﻳﺎت">ﻣﺒﻠﻎ ﺛﺎﺑﺖ ﻣﻦ ﻣﺠﻤﻮع اﻟﻤﺸﺘﺮﻳﺎت  </option>
                       <option value="ﻧﺴﺒﺔ ﻣﻦ ﻣﺠﻤﻮع اﻟﻤﺸﺘﺮﻳﺎت">ﻧﺴﺒﺔ ﻣﻦ ﻣﺠﻤﻮع اﻟﻤﺸﺘﺮﻳﺎت  </option>
                     </select>
@@ -157,13 +162,13 @@
                 </div>
                 <div class="Discount-amount"> 
                   <div class="form-group"> 
-                    <input class="form-control" type="text" id="input-588" placeholder="ادﺧﻞ ﻫﻨﺎ ﻣﺒﻠﻎ اﻟﺨﺼﻢ "/>
+                    <input class="form-control" type="text" id="input-773" placeholder="ادﺧﻞ ﻫﻨﺎ ﻣﺒﻠﻎ اﻟﺨﺼﻢ "/>
                     <div class="value-text">دينار</div>
                   </div>
                 </div>
                 <div class="discount-percentage" style="display:none">
                   <div class="form-group"> 
-                    <input class="form-control" type="text" id="input-570" placeholder="ادﺧﻞ ﻫﻨﺎ نسبة اﻟﺨﺼﻢ "/>
+                    <input class="form-control" type="text" id="input-280" placeholder="ادﺧﻞ ﻫﻨﺎ نسبة اﻟﺨﺼﻢ "/>
                     <div class="value-text">%</div>
                   </div>
                 </div>
@@ -178,29 +183,29 @@
                 </div>
                 <hr class="cus-hr">
                 <div class="form-group"> 
-                  <label for="input-772">اﻟﻤﺒﻠﻎ اﻟﺎﻗﺼﻰ ﻟﻠﺨﺼﻢ</label>
-                  <input class="form-control" type="text" id="input-772" placeholder="ادﺧﻞ ﻫﻨﺎ ﻣﺒﻠﻎ اﻟﺨﺼﻢ "/>
+                  <label for="input-128">اﻟﻤﺒﻠﻎ اﻟﺎﻗﺼﻰ ﻟﻠﺨﺼﻢ</label>
+                  <input class="form-control" type="text" id="input-128" placeholder="ادﺧﻞ ﻫﻨﺎ ﻣﺒﻠﻎ اﻟﺨﺼﻢ "/>
                   <div class="value-text">دينار</div>
                 </div>
                 <div class="form-group"> 
-                  <label for="input-898">ﺗﺎرﻳﺦ ووﻗﺖ اﻧﺘﻬﺎء اﻟﻌﺮض</label>
-                  <input class="form-control" type="datetime-local" id="input-898"/>
+                  <label for="input-945">ﺗﺎرﻳﺦ ووﻗﺖ اﻧﺘﻬﺎء اﻟﻌﺮض</label>
+                  <input class="form-control" type="datetime-local" id="input-945"/>
                 </div>
                 <hr class="cus-hr">
                 <div class="form-group">
-                  <label for="input-511">اﺳﺘﺜﻨﺎء اﻟﻤﻨﺘﺠﺎت اﻟﻤﺨﻔﻀﺔ</label>
-                  <select class="niceselect" type="text" id="select-511">
+                  <label for="input-226">اﺳﺘﺜﻨﺎء اﻟﻤﻨﺘﺠﺎت اﻟﻤﺨﻔﻀﺔ</label>
+                  <select class="niceselect" type="text" id="select-226">
                     <option value="نعم">نعم  </option>
                     <option value="لا">لا  </option>
                   </select>
                 </div>
                 <div class="form-group"> 
-                  <label for="input-823">ﻋﺪد اﻟﻤﺮات اﻟﺎﺳﺘﺨﺪام ﻟﻠﺠﻤﻴﻊ</label>
-                  <input class="form-control" type="text" id="input-823" placeholder="اﻛﺘﺐ ﻋﺪد اﻟﻤﺮات "/>
+                  <label for="input-219">ﻋﺪد اﻟﻤﺮات اﻟﺎﺳﺘﺨﺪام ﻟﻠﺠﻤﻴﻊ</label>
+                  <input class="form-control" type="text" id="input-219" placeholder="اﻛﺘﺐ ﻋﺪد اﻟﻤﺮات "/>
                 </div>
                 <div class="form-group"> 
-                  <label for="input-862">ﻋﺪد اﻟﻤﺮات اﻟﺎﺳﺘﺨﺪام ﻟﻠﻌﻤﻴﻞ اﻟﻮاﺣﺪ   </label>
-                  <input class="form-control" type="text" id="input-862" placeholder="اﻛﺘﺐ ﻋﺪد اﻟﻤﺮات "/>
+                  <label for="input-384">ﻋﺪد اﻟﻤﺮات اﻟﺎﺳﺘﺨﺪام ﻟﻠﻌﻤﻴﻞ اﻟﻮاﺣﺪ   </label>
+                  <input class="form-control" type="text" id="input-384" placeholder="اﻛﺘﺐ ﻋﺪد اﻟﻤﺮات "/>
                 </div>
                 <div class="btn-submit-300 mt-5">
                   <button class="btnn-orange btn btnn btn-fill px-5 hvr-shadow" type="button"><span>حفظ</span>
@@ -298,8 +303,8 @@
                   <div class="cus-multi-select" id="IncludedClients" data-options="[{&quot;label&quot;: &quot;New York&quot;,&quot;value&quot;: &quot;NY&quot;},{&quot;label&quot;: &quot;Washington&quot;,&quot;value&quot;: &quot;WA&quot;},{&quot;label&quot;: &quot;California&quot;,&quot;value&quot;: &quot;CA&quot;},{&quot;label&quot;: &quot;New Jersey&quot;,&quot;value&quot;: &quot;NJ&quot;},{&quot;label&quot;: &quot;North Carolina&quot;,&quot;value&quot;: &quot;NC&quot;}]"> </div>
                 </div>
                 <div class="form-group">
-                  <label for="input-386">  </label>
-                  <select class="niceselect" type="text" id="select-386">
+                  <label for="input-452">  </label>
+                  <select class="niceselect" type="text" id="select-452">
                     <option value="إختر">إختر  </option>
                     <option value="إختر">إختر  </option>
                   </select>
@@ -311,15 +316,15 @@
               </div>
               <div class="tab-pane fade" id="excluded-coupon" role="tabpanel" aria-labelledby="excluded-coupon-tab"> 
                 <div class="form-group">
-                  <label for="input-254">ﺗﺼﻨﻴﻔﺎت ﻣﺴﺘﺜﻨﺎة   </label>
-                  <select class="niceselect" type="text" id="select-254">
+                  <label for="input-508">ﺗﺼﻨﻴﻔﺎت ﻣﺴﺘﺜﻨﺎة   </label>
+                  <select class="niceselect" type="text" id="select-508">
                     <option value="إختر">إختر  </option>
                     <option value="إختر">إختر  </option>
                   </select>
                 </div>
                 <div class="form-group">
-                  <label for="input-745">ﻣﺎرﻛﺎت ﻣﺴﺘﺜﻨﺎة    </label>
-                  <select class="niceselect" type="text" id="select-745">
+                  <label for="input-952">ﻣﺎرﻛﺎت ﻣﺴﺘﺜﻨﺎة    </label>
+                  <select class="niceselect" type="text" id="select-952">
                     <option value="إختر">إختر  </option>
                     <option value="إختر">إختر  </option>
                   </select>

@@ -19,7 +19,7 @@ html(lang="en" dir="rtl")
                 .container
                     .sign-up-steps-head-inner 
                         .user-box 
-                            a(href="../auth/login.html").back(data-back=0)
+                            a.back(data-back=0) 
                                 svg 
                                     use(href="../../assets/images/icons/icons.svg#arrow-right-2")
                             .sign-up-page-info
@@ -72,8 +72,8 @@ html(lang="en" dir="rtl")
 
                             #step-2-details.tab-pane.fade(role='tabpanel' aria-labelledby='step-2-details-tab') 
                                 .sign-up-steps-title 
-                                    h2  اﻟﻤﻨﺘﺠﺎت اﻟﺘﻰ ﺗﺒﻴﻌﻬﺎ
-                                    p  ﻣﺎﻫﻰ اﻟﻤﻨﺘﺠﺎت اﻟﺘﻰ ﺗﻘﻮم ﺑﺒﻴﻌﻬﺎ
+                                    h2  منتجات تهمك
+                                    p  ﻣﺎﻫﻰ اﻟﻤﻨﺘﺠﺎت اﻟﺘﻰ  تهمك
                                 .product-type-list.mt-5.pt-3
                                     -var types = ['خضراوات' , 'مخبوزات' , 'الدجاج' , 'حلويات وبسكويت' , 'وجبات خفيفة' , 'البقالة' , 'معلبات' , 'مجمدات' , 'العناية بالطفل' , 'العناية الشخصية' , 'منتجات الألبان' ]  
                                         each prduct_type , index in types 
@@ -127,22 +127,25 @@ html(lang="en" dir="rtl")
                                                 use(href="../../assets/images/icons/icons.svg#envelope")
                                             span اﻟﺒﺮﻳﺪ اﻟﺎﻟﻜﺘﺮوﻧﻰ :
                                             input(type="text")
-                                        .input-text-icon-box.form-group 
-                                            svg 
-                                                use(href="../../assets/images/icons/icons.svg#key")
-                                            span كلمة المرور : 
-                                            input(type="password")  
-                                        .input-text-icon-box.form-group 
-                                            svg 
-                                                use(href="../../assets/images/icons/icons.svg#key")
-                                            span تأكيد كلمة المرور :
-                                            input(type="password")              
+                                        .login-with 
+                                            a(href="")
+                                                svg 
+                                                    use(href="../../assets/images/icons/icons.svg#phone")
+
+                                            a(href="")
+                                                svg 
+                                                    use(href="../../assets/images/icons/icons.svg#whatsapp")                 
                                         .btn-submit 
-                                            button.btn.hvr-float-shadow
-                                                span تسجيل    
+                                            a(href="../../html/auth-landing/confirm.html").btn.hvr-float-shadow
+                                                span تسجيل
+
+
 
                         <input id="lng" type="hidden" value="hamza">
                         <input id="lat" type="hidden" value="hamza">
+
+
+
 
             ul.nav.nav-tabs.d-none
                 li.nav-item(role='presentation')

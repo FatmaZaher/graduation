@@ -2118,14 +2118,14 @@ div#example_paginate .page-item .page-link {
   display: flex;
   justify-content: center;
 }
-.center-action-btn button {
+.center-action-btn button, .center-action-btn a {
   background: var(--main-color) !important;
   width: 100%;
   max-width: 300px;
   padding-top: 15px;
   padding-bottom: 15px;
 }
-.center-action-btn button span {
+.center-action-btn button span, .center-action-btn a span {
   color: #fff !important;
   font-size: 1.1rem !important;
 }
@@ -2415,8 +2415,10 @@ input[type=checkbox].size-lg {
   margin: 20px 0;
 }
 
-.cus-bargains .buttons button {
+.cus-bargains .buttons button,
+.cus-bargains .buttons a {
   margin: 0 5px;
+  line-height: 38px;
 }
 
 .cus-bargains .progress {
@@ -2545,7 +2547,8 @@ input[type=checkbox].size-lg {
   background: var(--main-color);
 }
 
-.bargains-request .btn-submit button {
+.bargains-request .btn-submit button,
+.bargains-request .btn-submit a {
   width: 100%;
   padding: 15px;
   max-width: 400px;
@@ -3607,8 +3610,9 @@ ul.cus-list li span:before {
   padding: 20px;
   background-color: #FFFCF6;
 }
-.landing-layout .landing-notis-head button,
-.account-layout .landing-notis-head button {
+.landing-layout .landing-notis-head button, .landing-layout .landing-notis-head a,
+.account-layout .landing-notis-head button,
+.account-layout .landing-notis-head a {
   margin: 0 15px;
 }
 .landing-layout .landing-notis-head p,
@@ -3734,16 +3738,18 @@ ul.cus-list li span:before {
   margin-right: 10px;
   height: 19px;
 }
-.landing-layout .main-content .home-sec-head .button button,
-.account-layout .main-content .home-sec-head .button button {
+.landing-layout .main-content .home-sec-head .button button, .landing-layout .main-content .home-sec-head .button a,
+.account-layout .main-content .home-sec-head .button button,
+.account-layout .main-content .home-sec-head .button a {
   width: 180px;
   padding: 13px 0;
   background: transparent;
   border: 1px solid var(--main-color);
   color: var(--main-color);
 }
-.landing-layout .main-content .home-sec-head .button button span,
-.account-layout .main-content .home-sec-head .button button span {
+.landing-layout .main-content .home-sec-head .button button span, .landing-layout .main-content .home-sec-head .button a span,
+.account-layout .main-content .home-sec-head .button button span,
+.account-layout .main-content .home-sec-head .button a span {
   font-size: 18px;
 }
 .landing-layout .main-content .horzintal .product,
@@ -3812,10 +3818,16 @@ ul.cus-list li span:before {
   color: #A485C7;
   font-size: 20px;
 }
+.landing-layout .main-content .product .img,
+.account-layout .main-content .product .img {
+  height: 185px;
+}
 .landing-layout .main-content .product .img img,
 .account-layout .main-content .product .img img {
   margin: 0 auto;
   display: inherit;
+  max-width: 100%;
+  max-height: 100%;
 }
 @media (max-width: 767.98px) {
   .landing-layout .main-content .product .img img,
@@ -3963,6 +3975,7 @@ ul.cus-list li span:before {
   display: inherit;
   position: absolute;
   left: 50%;
+  max-width: 100%;
   transform: translate(-50%, -25%);
 }
 .landing-layout .main-content .offers .offer .offer-body,
@@ -4382,11 +4395,13 @@ ul.cus-list li span:before {
   margin: 40px 0;
   background: #fff;
 }
-.landing-layout .cart-content .order-details .comp-order button,
-.account-layout .cart-content .order-details .comp-order button {
+.landing-layout .cart-content .order-details .comp-order button, .landing-layout .cart-content .order-details .comp-order a,
+.account-layout .cart-content .order-details .comp-order button,
+.account-layout .cart-content .order-details .comp-order a {
   width: 100%;
   background-color: #EB631E;
   height: 60px;
+  font-size: 25px;
 }
 .landing-layout .cart-content .delivery h5,
 .landing-layout .cart-content .delivery h6,
@@ -4535,8 +4550,9 @@ ul.cus-list li span:before {
 .account-layout .order-success .order-total ul li:last-of-type h6 {
   margin: 0;
 }
-.landing-layout .order-success .order-total .comp-order button,
-.account-layout .order-success .order-total .comp-order button {
+.landing-layout .order-success .order-total .comp-order button, .landing-layout .order-success .order-total .comp-order a,
+.account-layout .order-success .order-total .comp-order button,
+.account-layout .order-success .order-total .comp-order a {
   width: 100%;
 }
 .landing-layout .order-success > a,
@@ -5157,7 +5173,7 @@ ul.cus-list li span:before {
 .account-layout .support-content .form-control {
   border-radius: 10px;
 }
-.account-layout .support-content .btn-submit button {
+.account-layout .support-content .btn-submit button, .account-layout .support-content .btn-submit a {
   max-width: 300px;
   padding: 15px 0;
   width: 100%;

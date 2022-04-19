@@ -1,7 +1,9 @@
 mixin notisHead(text)
     .landing-notis-head.d-flex.justify-content-center.align-items-center 
         p.m-0 هل تريد ان تبدء صفقة جديدة الان ؟ 
-        +Button({color:'orange' , name:'اضافة صفقة ' , class:"btn-fill" })
+        a(href='../../html/landing/add-deal.html').btnn-orange.btn.btnn.hvr-shadow.btn-fill
+            span اضافة صفقة
+
 mixin homeHead (head)
     .home-sec-head.mb-4  
         .text 
@@ -9,14 +11,16 @@ mixin homeHead (head)
             if head.pargh
                 p  #{head.pargh}
             if head.link
-                a(href='#').link #{head.link}
+                a(href=head.url).link #{head.link}
                     svg
                         use( href="../../assets/images/icons/icons.svg#arrow-right")
 
         .button 
-            +Button({color:'orange' , name: head.button})
+            a(href=head.url).btnn-orange.btn.btnn.hvr-shadow
+                span #{head.button}
+
 mixin product (prod)
-    a.product.hvr-float-shadow(href="#")     
+    a(href=prod.url).product.hvr-float-shadow     
         div
             .icon.d-flex.justify-content-center.align-items-center 
                 svg 
@@ -25,7 +29,7 @@ mixin product (prod)
                 span.discount - 10%
             div
                 .img
-                    img(src="../../assets/images/products/product-1.png" alt="")
+                    img(src="../../assets/images/"+ prod.img +".png" alt="")
             div
                 p.name اسم التاجر
                 h4 جبنة لافاش كيري
@@ -37,28 +41,24 @@ mixin product (prod)
                     use(href="../../assets/images/icons/icons.svg#plus")
             
 mixin bargain(bargain)
-    a.bargain.hvr-float-shadow(href="#")     
+    a.bargain.hvr-float-shadow(href="../../html/landing/order-details.html")     
         .bargain-head 
-            h6.m-0 حالة الصفقة
-            span لم يتم الترسية بعد
+            h6.m-0 حالة الطلب
+            span  يتم التوصيل 
         .bargain-body 
             .row.w-100.m-0 
                 .col-6
                     .bargain-body-sec
-                        span القسم
-                        h6 بقالة - خضراوات
+                        span إجمالي الطلب
+                        h6 230 شيكل
                 .col-6
                     .bargain-body-sec
-                        span اسم المنتج
+                        span التاجر
                         h6 Grocery shope
                 .col-6
                     .bargain-body-sec
-                        span الكمية
-                        h6 40 صندوق
-                .col-6
-                    .bargain-body-sec
-                        span العروض
-                        h6.textt-red 50 عرض
+                        span وقت وتاريخ الطلب
+                        h6 20/10/2021 - 10:50 م
 
 mixin offer(offer)
     a.offer.hvr-float-shadow(href="#")
@@ -124,13 +124,13 @@ mixin merchant-details(details)
                 h6 التاجر
                 h5.mb-0 Grocery shope
         .d-flex.justify-content-end.align-items-center  
-            if (details.follow)
-                +Button({color:'orange' , name:'متابعة'})
-            else
-                +Button({color:'orange btn-fill' , name:'تتابع', icon: 'check'})
             if (details.chat)
                 .message-view-box-actions 
-                    +Button({color:'orange' , class:'btn-fill ms-2' , icon:'envelope'})
+                    //- +Button({color:'orange' , class:'btn-fill ms-2' , icon:'envelope'})
+                    a(href='../../html/landing/chat.html').btnn-orange.btn.btnn.hvr-shadow
+                        svg 
+                            use(href='../../assets/images/icons/icons.svg#envelope')
+
 
 
 

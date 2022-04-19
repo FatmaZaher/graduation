@@ -17,7 +17,7 @@
   <div class="dashboard-layout"> 
     <div class="dashbord-navbar"> 
       <div class="logo">  <img src="../../assets/images/logo.png" alt="alt"></div>
-      <div class="dash-breadcrumb"> 
+      <div class="dash-breadcrumb ms-4">
         <h1> الصفقات
         </h1>
       </div>
@@ -70,10 +70,10 @@
                 <div class="list-links-group"> 
                   <h5>المنتجات</h5>
                   <ul>
-                    <li><a href="../dashboard/total-products.html">
+                    <li><a href="total-products.html">
                         <div class="icon"> <img src="../../assets/images/menu/Product_Package.svg" alt=""></div><span>المنتجات </span></a></li>
-                    <li><a href="../dashboard/add-product.html">
-                        <div class="icon"> <img src="../../assets/images/menu/plus.svg" alt=""></div><span>إضافة منتج </span></a></li>
+                    <li><a href="../dashboard/categories.html">
+                        <div class="icon"> <img src="../../assets/images/menu/plus.svg" alt=""></div><span>التصنيفات </span></a></li>
                   </ul>
                 </div>
                 <div class="list-links-group"> 
@@ -83,10 +83,13 @@
                         <div class="icon"> <img src="../../assets/images/menu/Shopping_Bag.svg" alt=""></div><span>الطلبات </span></a></li>
                     <li><a href="../dashboard/bargains.html">
                         <div class="icon"> <img src="../../assets/images/menu/Tag.svg" alt=""></div><span>الصفقات </span></a></li>
-                    <li><a>
-                        <div class="icon"> <img src="../../assets/images/menu/offer.svg" alt=""></div><span>عروض الصفقات  </span></a></li>
-                    <li><a>
-                        <div class="icon"> <img src="../../assets/images/menu/circular-diagram.svg" alt=""></div><span>التقارير  </span></a></li>
+                  </ul>
+                </div>
+                <div class="list-links-group"> 
+                  <h5>التسويق</h5>
+                  <ul>
+                    <li><a href="../dashboard/Abandoned-baskets.html">
+                        <div class="icon"> <img src="../../assets/images/menu/cart.svg" alt=""></div><span>السلات المتروكة </span></a></li>
                   </ul>
                 </div>
                 <div class="list-links-group"> 
@@ -94,6 +97,8 @@
                   <ul>
                     <li><a href="../dashboard/clients.html">
                         <div class="icon"> <img src="../../assets/images/menu/users.svg" alt=""></div><span>العملاء </span></a></li>
+                    <li><a href="../dashboard/chat.html">
+                        <div class="icon"> <img src="../../assets/images/menu/comm-chat.svg" alt=""></div><span>الرسائل </span></a></li>
                   </ul>
                 </div>
                 <div class="list-links-group"> 
@@ -185,12 +190,10 @@
                       <button class="btnn-gray btn btnn hvr-shadow" type="button" data-bs-toggle="modal" data-bs-target="#mapModal"><span>عرض الموقع
                           <svg> 
                             <use href="../../assets/images/icons/icons.svg#marker"></use>
-                          </svg></span></button>
-                      <button class="btnn-orange btn btnn ml-2 hvr-shadow" type="button"><span>تفاصيل العميل</span>
+                          </svg></span></button><a class="btnn-orange btn btnn hvr-shadow" href="../../html/dashboard/bargains-request-view.html"><span>تفاصيل العميل</span>
                         <svg> 
                           <use href="../../assets/images/icons/icons.svg#user"></use>
-                        </svg>
-                      </button>
+                        </svg></a>
                     </div>
                   </div>
                   <hr>
@@ -222,10 +225,7 @@
                     </ul>
                     <hr>
                   </div>
-                  <div class="center-action-btn"> 
-                    <button class="btnn-orange btn btnn hvr-shadow" type="button"><span>تقديم عرض للصفقة</span>
-                    </button>
-                  </div>
+                  <div class="center-action-btn"> <a class="btnn-orange btn btnn hvr-shadow" href="../../html/dashboard/bargains-request.html"><span>تقديم عرض للصفقة</span></a></div>
                 </div>
               </div>
               <div class="tab-pane fade" id="product-details" role="tabpanel" aria-labelledby="product-details-tab"> 
@@ -280,10 +280,7 @@
                   <div class="col-lg-10"><a class="load-more-sec mb-5"> 
                       <p>هذه المنتجات متوفرة لديك ؟ قدم عرض الآن</p></a></div>
                 </div>
-                <div class="center-action-btn"> 
-                  <button class="btnn-orange btn btnn hvr-shadow" type="button"><span>تقديم عرض للصفقة</span>
-                  </button>
-                </div>
+                <div class="center-action-btn"> <a class="btnn-orange btn btnn hvr-shadow" href="../../html/dashboard/bargains-request.html"><span>تقديم عرض للصفقة</span></a></div>
               </div>
               <div class="modal fade" id="mapModal" tabindex="-1" aria-labelledby="mapModalLabel" aria-hidden="true">
                 <div class="modal-dialog">

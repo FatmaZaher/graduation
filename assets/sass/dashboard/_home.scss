@@ -48,7 +48,7 @@
         padding: 20px;
         background-color: #FFFCF6;
 
-        button {
+        button, a {
             margin: 0 15px;
         }
 
@@ -167,7 +167,7 @@
             }
 
             .button {
-                button {
+                button, a {
                     width: 180px;
                     padding: 13px 0;
                     background: transparent;
@@ -255,9 +255,12 @@
             }
 
             .img {
+                height: 185px;
                 img {
                     margin: 0 auto;
                     display: inherit;
+                    max-width: 100%;
+                    max-height: 100%;
 
                     @media (max-width: 767.98px) {
                         width: 100%;
@@ -412,6 +415,7 @@
                         display: inherit;
                         position: absolute;
                         left: 50%;
+                        max-width: 100%;
                         transform: translate(-50%, -25%);
                     }
                 }
@@ -905,10 +909,11 @@
             }
 
             .comp-order {
-                button {
+                button, a {
                     width: 100%;
                     background-color: #EB631E;
                     height: 60px;
+                    font-size: 25px;
                 }
             }
 
@@ -1077,7 +1082,7 @@
             }
 
             .comp-order {
-                button {
+                button, a {
                     width: 100%;
                 }
             }
@@ -1804,7 +1809,7 @@
         }
 
         .btn-submit {
-            button {
+            button, a {
                 max-width: 300px;
                 padding: 15px 0;
                 width: 100%;

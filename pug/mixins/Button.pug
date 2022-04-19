@@ -5,3 +5,12 @@ mixin Button(button)
         if button.icon
             svg 
                 use(href='../../assets/images/icons/icons.svg#' + button.icon)
+
+//- mixin Link(link)
+//-     a(href= link.url)(class=['btnn-' + link.color , 'btn' , 'btnn' , link.class , 'hvr-shadow' ] )
+//-         if link.name
+//-             span #{link.name}
+//-         if link.icon
+//-             svg 
+//-                 use(href='../../assets/images/icons/icons.svg#' + link.icon)
+

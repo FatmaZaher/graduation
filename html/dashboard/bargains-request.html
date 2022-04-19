@@ -17,7 +17,7 @@
   <div class="dashboard-layout"> 
     <div class="dashbord-navbar"> 
       <div class="logo">  <img src="../../assets/images/logo.png" alt="alt"></div>
-      <div class="dash-breadcrumb"> 
+      <div class="dash-breadcrumb ms-4">
         <h1> الصفقات
         </h1>
       </div>
@@ -70,10 +70,10 @@
                 <div class="list-links-group"> 
                   <h5>المنتجات</h5>
                   <ul>
-                    <li><a href="../dashboard/total-products.html">
+                    <li><a href="total-products.html">
                         <div class="icon"> <img src="../../assets/images/menu/Product_Package.svg" alt=""></div><span>المنتجات </span></a></li>
-                    <li><a href="../dashboard/add-product.html">
-                        <div class="icon"> <img src="../../assets/images/menu/plus.svg" alt=""></div><span>إضافة منتج </span></a></li>
+                    <li><a href="../dashboard/categories.html">
+                        <div class="icon"> <img src="../../assets/images/menu/plus.svg" alt=""></div><span>التصنيفات </span></a></li>
                   </ul>
                 </div>
                 <div class="list-links-group"> 
@@ -83,10 +83,13 @@
                         <div class="icon"> <img src="../../assets/images/menu/Shopping_Bag.svg" alt=""></div><span>الطلبات </span></a></li>
                     <li><a href="../dashboard/bargains.html">
                         <div class="icon"> <img src="../../assets/images/menu/Tag.svg" alt=""></div><span>الصفقات </span></a></li>
-                    <li><a>
-                        <div class="icon"> <img src="../../assets/images/menu/offer.svg" alt=""></div><span>عروض الصفقات  </span></a></li>
-                    <li><a>
-                        <div class="icon"> <img src="../../assets/images/menu/circular-diagram.svg" alt=""></div><span>التقارير  </span></a></li>
+                  </ul>
+                </div>
+                <div class="list-links-group"> 
+                  <h5>التسويق</h5>
+                  <ul>
+                    <li><a href="../dashboard/Abandoned-baskets.html">
+                        <div class="icon"> <img src="../../assets/images/menu/cart.svg" alt=""></div><span>السلات المتروكة </span></a></li>
                   </ul>
                 </div>
                 <div class="list-links-group"> 
@@ -94,6 +97,8 @@
                   <ul>
                     <li><a href="../dashboard/clients.html">
                         <div class="icon"> <img src="../../assets/images/menu/users.svg" alt=""></div><span>العملاء </span></a></li>
+                    <li><a href="../dashboard/chat.html">
+                        <div class="icon"> <img src="../../assets/images/menu/comm-chat.svg" alt=""></div><span>الرسائل </span></a></li>
                   </ul>
                 </div>
                 <div class="list-links-group"> 
@@ -175,8 +180,8 @@
                     <td>
                       <div class="table-actions">
                         <div class="available-check"> 
-                          <input type="checkbox" id="available-check396"/>
-                          <label class="btn hvr-shadow" for="available-check396">متوفر لدي</label>
+                          <input type="checkbox" id="available-check601"/>
+                          <label class="btn hvr-shadow" for="available-check601">متوفر لدي</label>
                         </div>
                       </div>
                     </td>
@@ -190,8 +195,8 @@
                     <td>
                       <div class="table-actions">
                         <div class="available-check"> 
-                          <input type="checkbox" id="available-check827"/>
-                          <label class="btn hvr-shadow" for="available-check827">متوفر لدي</label>
+                          <input type="checkbox" id="available-check777"/>
+                          <label class="btn hvr-shadow" for="available-check777">متوفر لدي</label>
                         </div>
                       </div>
                     </td>
@@ -205,8 +210,8 @@
                     <td>
                       <div class="table-actions">
                         <div class="available-check"> 
-                          <input type="checkbox" id="available-check302"/>
-                          <label class="btn hvr-shadow" for="available-check302">متوفر لدي</label>
+                          <input type="checkbox" id="available-check492"/>
+                          <label class="btn hvr-shadow" for="available-check492">متوفر لدي</label>
                         </div>
                       </div>
                     </td>
@@ -220,8 +225,8 @@
                     <td>
                       <div class="table-actions">
                         <div class="available-check"> 
-                          <input type="checkbox" id="available-check39"/>
-                          <label class="btn hvr-shadow" for="available-check39">متوفر لدي</label>
+                          <input type="checkbox" id="available-check614"/>
+                          <label class="btn hvr-shadow" for="available-check614">متوفر لدي</label>
                         </div>
                       </div>
                     </td>
@@ -237,8 +242,8 @@
           <div class="row row-cols-1 row-cols-md-2 align-items-end"> 
             <div class="col"> 
               <div class="form-group">
-                <label for="input-467">خيارات الشحن</label>
-                <select class="niceselect" type="text" id="select-467">
+                <label for="input-480">خيارات الشحن</label>
+                <select class="niceselect" type="text" id="select-480">
                   <option value="أﺧﺘﺮ ﻃﺮﻳﻘﺔ اﻟﺸﺤﻦ">أﺧﺘﺮ ﻃﺮﻳﻘﺔ اﻟﺸﺤﻦ  </option>
                   <option value="إختر">إختر  </option>
                   <option value="إختر">إختر  </option>
@@ -248,20 +253,20 @@
             </div>
             <div class="col"> 
               <div class="form-group"> 
-                <label for="input-412">موعد الشحن</label>
-                <input class="form-control" type="date" id="input-412" placeholder="12 ﻧﻮﻗﻤﺒﺮ 2021"/>
+                <label for="input-501">موعد الشحن</label>
+                <input class="form-control" type="date" id="input-501" placeholder="12 ﻧﻮﻗﻤﺒﺮ 2021"/>
               </div>
             </div>
             <div class="col"> 
               <div class="form-group"> 
-                <label for="input-82">اﻟﺴﻌﺮ ﻟﻠﻤﻨﺘﺠﺎت اﻟﻤﻄﻠﻮﺑﺔ</label>
-                <input class="form-control" type="text" id="input-82"/>
+                <label for="input-343">اﻟﺴﻌﺮ ﻟﻠﻤﻨﺘﺠﺎت اﻟﻤﻄﻠﻮﺑﺔ</label>
+                <input class="form-control" type="text" id="input-343"/>
                 <div class="value-text">دينار</div>
               </div>
             </div>
           </div>
           <div class="form-group"> 
-            <label for="input-827">ملاحظاتك  </label>
+            <label for="input-119">ملاحظاتك  </label>
             <textarea class="form-control" rows="5"></textarea>
           </div>
           <div class="add-product-title pt-5"> 

@@ -6,6 +6,9 @@ block title
 block content
     .bargains-page
         +pageHead('فلتر الصفقات')
+        .row.row-cols-lg-4.row-cols-2 
+            +statusInfo('عروض حالية'  , 'orange' , '450 عرض')
+            +statusInfo('عروض تحولت لطلبات'  , 'green' , '530 عرض')
         .page-filters-2
             .inputs-btn
                 +select({label:'' , options:['الأحدث' , 'إختر' , 'إختر' , 'الأحدث']})

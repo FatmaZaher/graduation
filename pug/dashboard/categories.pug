@@ -2,7 +2,7 @@ extends ../layouts/dashboardLayout.pug
 block title 
     | جميع الطلبات
 block content 
-    +pageHead('التصنيفات <span>( 555 )</span>' , {url:'#' , title:'إضافة تصنيف'})
+    +pageHead('التصنيفات <span>( 555 )</span>' , {url:'../../html/dashboard/add-category.html' , title:'إضافة تصنيف'})
    
     - var buttons = [{class:'btnn-red' , name:'حذف جميع التصنيفات'} ]
     - var fields = ['الإسم' , 'تاريخ الإنشاء' , 'تاريخ الطلب' , 'القسم الرئيسي', 'حالة التصنيف' , 'الإجراءات']

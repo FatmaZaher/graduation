@@ -107,7 +107,8 @@ block content
                                 +input({label:'ملاحظاتك ' } , true)
 
                     .add-product-footer
-                        +Button({color:'orange' , name:'اضافة الصفقة ' , class:'ml-2' , type:'submit' })
+                        a(href='../../html/landing/check-out-deal.html').btnn-orange.btn.btnn.hvr-shadow.btn-fill
+                            span اضافة صفقة
                         +Button({color:'red' , name:'إلغاء ' })
     
     #dayModal.modal.fade(tabindex='-1' aria-labelledby='dayModalLabel' aria-hidden='true')

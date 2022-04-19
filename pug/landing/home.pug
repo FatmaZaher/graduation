@@ -20,44 +20,31 @@ block content
                     .image 
                         img(src="../../assets/images/products-types/type-"+ (index + 1) +".png" alt="")
                     h3 #{prduct_type} 
-    .stories.mt-5
-        -var head = {'button':'عرض الكل  ','header':'قصص عروض التجار','pargh':'شاهد حالات وقصص التجار'}
-        +homeHead(head) 
-        .owl-carousel.owl-theme
-            -var marchants = ['Grocery' , 'Grocery' , 'Grocery' , ' Grocery' , 'Grocery ' , 'Grocery' , 'Grocery' , 'Grocery' , ' Grocery' , ' Grocery' , 'Grocery ' ]  
-            each marchant , index in marchants 
-                .item.product-type
-                    input(type="checkbox" name="marchants" + index) 
-                    .image 
-                        img(src="../../assets/images/merchants/merchant-1" +".png" alt="")
-                    h3 #{marchant}            
     .products.mt-5
-        -var head = {'header': 'وصل حديثا فى قسم البقالة','link':'زيارة القسم','button':'زيارة القسم'}
+        -var head = {'header': 'وصل حديثا فى قسم البقالة','link':'زيارة القسم','button':'زيارة القسم' ,'url': '../../html/landing/product-list.html'}
         +homeHead(head)
-        .row.m-0.w-100.mt-5
-            //- -var products = [{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'}]  
-            //- each product , index in products
+        .row.m-0.w-100.mt-5.row-cols-1.row-cols-sm-2.row-cols-md-4
             .col 
-                +product({isDiscount : true})
+                +product({isDiscount : true, img: 'products/product-1', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : false})
+                +product({isDiscount : false, img: 'products/product-2', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : true})
+                +product({isDiscount : true, img: 'products/product-3', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : true})
+                +product({isDiscount : true, img: 'products/product-4', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : true})
+                +product({isDiscount : true, img: 'products/product-5', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : false})
+                +product({isDiscount : false, img: 'products/product-1', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : true})
+                +product({isDiscount : true, img: 'products/product-2', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : true})
+                +product({isDiscount : true, img: 'products/product-3', url: '../../html/landing/product.html'})
                 
     .img-section.mt-5 
         img(src="../../assets/images/landing/img-1.png" alt="")
     .bargains.mt-5
-        -var head = {'header': 'الصفقات الحديثة','pargh':'أحدث الصفقات الي طلبها المستخدمين','button':'زيارة القسم'}
+        -var head = {'header': 'الصفقات الحديثة','pargh':'أحدث الصفقات الي طلبها المستخدمين','button':'زيارة القسم' ,'url': '../../html/landing/product-list.html'}
         +homeHead(head)
         .row.m-0.w-100.mt-5
             .col-md-4
@@ -75,35 +62,33 @@ block content
                             .col-md-6.mb-4
                                 +bargain(bargain, index)
     .electronics.mt-5
-        -var head = {'header': 'حديثا فى قسم الالكترونيات','link':'زيارة القسم','button':'زيارة القسم'}
+        -var head = {'header': 'حديثا فى قسم الالكترونيات','link':'زيارة القسم','button':'زيارة القسم' ,'url': '../../html/landing/product-list.html'}
         +homeHead(head)
-        .row.m-0.w-100.mt-5
-            //- -var products = [{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'},{'discount': '10%','marchantName': 'اسم التاجر ','image': 'products/product-1','productName': 'جبنة لافاش كيري','price': '150 دينار','oldPrice': '50 دينار','number': '48 قطعة'}]  
-            //- each product , index in products
+        .row.m-0.w-100.mt-5.row-cols-1.row-cols-sm-2.row-cols-md-4
             .col 
-                +product({isDiscount : true})
+                +product({isDiscount : true, img: 'landing/electronic/electronic-1', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : false})
+                +product({isDiscount : false, img: 'landing/electronic/electronic-2', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : true})
+                +product({isDiscount : true, img: 'landing/electronic/electronic-3', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : true})
+                +product({isDiscount : true, img: 'landing/electronic/electronic-4', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : true})
+                +product({isDiscount : true, img: 'landing/electronic/electronic-5', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : false})
+                +product({isDiscount : false, img: 'landing/electronic/electronic-1', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : true})
+                +product({isDiscount : true, img: 'landing/electronic/electronic-2', url: '../../html/landing/product.html'})
             .col   
-                +product({isDiscount : true})
-                         
+                +product({isDiscount : true, img: 'landing/electronic/electronic-3', url: '../../html/landing/product.html'})
+
     .img-section.mt-5 
         img(src="../../assets/images/landing/img-1.png" alt="")
     .stories-marchants.mt-5 
-        -var head = {'button':'زيارة القسم','header':' عروض التجار'}
+        -var head = {'button':'زيارة القسم','header':' عروض التجار' ,'url': '../../html/landing/product-list.html'}
             +homeHead(head) 
     .offers.mt-5 
-        -var offers =[{'name':'الإلكترونيات','discount': 'خصم 50%','image': 'landing/offer-1'},{'name':'الإلكترونيات','discount': 'خصم 50%','image': 'landing/offer-1'},{'name':'الإلكترونيات','discount': 'خصم 50%','image': 'landing/offer-1'},{'name':'الإلكترونيات','discount': 'خصم 50%','image': 'landing/offer-1'},{'name':'الإلكترونيات','discount': 'خصم 50%','image': 'landing/offer-1'}]
+        -var offers =[{'name':'الإلكترونيات','discount': 'خصم 50%','image': 'landing/offer/offer-1'},{'name':'البقالة','discount': 'خصم 20%','image': 'landing/offer/offer-2'},{'name':'العناية بالبشرة','discount': 'خصم 30%','image': 'landing/offer/offer-3'},{'name':'أدوات الحلاقة','discount': 'خصم 50%','image': 'landing/offer/offer-4'},{'name':'أدوات التجميل','discount': 'خصم 50%','image': 'landing/offer/offer-5'}]
         each offer , index in offers
             +offer(offer)
 

@@ -586,6 +586,7 @@
 .btnn {
   padding: 7px 30px;
   border-radius: 30px;
+  
 
   @media (max-width: 575.98px) {
     padding-right: 18px;
@@ -1310,12 +1311,13 @@ ul#tabs-486 {}
   display: flex;
   justify-content: center;
 
-  button {
+  button,a {
     background: var(--main-color) !important;
     width: 100%;
     max-width: 300px;
     padding-top: 15px;
     padding-bottom: 15px;
+    
 
     span {
       color: #fff !important;
@@ -1623,8 +1625,10 @@ input[type="checkbox"] {
   margin: 20px 0;
 }
 
-.cus-bargains .buttons button {
+.cus-bargains .buttons button,
+.cus-bargains .buttons a {
   margin: 0 5px;
+  line-height: 38px;
 }
 
 .cus-bargains .progress {
@@ -1778,7 +1782,8 @@ input[type="checkbox"] {
 }
 
 .bargains-request {
-  .btn-submit button {
+  .btn-submit button,
+  .btn-submit a {
     width: 100%;
     padding: 15px;
     max-width: 400px;
