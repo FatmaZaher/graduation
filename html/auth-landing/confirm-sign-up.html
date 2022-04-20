@@ -30,22 +30,22 @@
             </div>
           </div>
           <div class="col"> 
-            <div class="auth-form">                 
-              <div class="icon"> <img src="../../assets/images/icons/waving-hand.svg" alt=""></div>
-              <h1>مرحباً . قم بتسجيل الدخول </h1>
+            <div class="auth-form">                 <a class="icon" href="../auth/login.html"> 
+                <svg> 
+                  <use href="../../assets/images/icons/icons.svg#arrow-right"></use>
+                </svg></a>
+              <h1>أدخل الكود الخاص بك  </h1>
               <form action="">
-                <div class="input-text-icon-box"> 
-                  <svg> 
-                    <use href="../../assets/images/icons/icons.svg#phone"></use>
-                  </svg><span>رقم الجوال</span>
-                  <input class="phone_number" type="text" id="phone">
-                  <input type="hidden" id="fullNumber">
+                <input type="hidden" id="fullPin">
+                <div class="myPinCode">
+                  <input class="form-control" type="tel" maxlength="3">
+                  <input class="form-control" type="tel" maxlength="3">
+                  <input class="form-control" type="tel" maxlength="3">
+                  <input class="form-control" type="tel" maxlength="3">
                 </div>
-                <div id="error-msg"></div>
-                <div id="valid-msg"></div>
-                <div class="btn-submit"> <a class="btn hvr-float-shadow" href="../../html/landing/confirm.html"><span>تسجيل الدخول   </span></a></div>
+                <div class="btn-submit"> <a class="btn hvr-float-shadow" href="../../html/auth-landing/sign-up-1.html"><span>تسجيل الدخول </span></a></div>
                 <div class="bottom-form-text"> 
-                  <h5>ما اشتركت معنا بعد   <a href="../../html/landing/sign-up.html">إشترك الآن   </a></h5>
+                  <h5>ما اشتركت معنا بعد   <a href="../../html/landing/home.html">إشترك الآن    </a></h5>
                 </div>
               </form>
             </div>

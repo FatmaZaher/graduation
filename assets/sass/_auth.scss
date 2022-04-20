@@ -313,7 +313,15 @@
   display: flex;
   justify-content: center;
 }
-
+// .form .btn-submit a{
+//   width: 100%;
+//   background: var(--main-color);
+//   border-radius: 50px;
+//   color: #fff !important;
+//   font-size: 1.3rem;
+//   max-width: 300px;
+//   margin: 0 auto;
+// }
 .steps-action-btn button {
   width: 100%;
   background: var(--main-color);
@@ -433,7 +441,7 @@
   fill: #fff;
 }
 
-.sign-up-steps-page #step-4-details .form .btn-submit button {
+.sign-up-steps-page #step-4-details .form .btn-submit span {
   width: 100%;
   background: var(--main-color);
   border-radius: 50px;
@@ -441,8 +449,10 @@
   font-size: 1.3rem;
   max-width: 300px;
   padding: 10px;
-  color: #fff;
   margin-top: 30px;
+  a{
+    text-decoration: none;
+  }
 }
 
 #map {

@@ -1,0 +1,20 @@
+extends ../layouts/authLayout.pug
+
+block content 
+    a(href="../auth/login.html").icon 
+        svg 
+            use(href="../../assets/images/icons/icons.svg#arrow-right")
+    h1 أدخل الكود الخاص بك  
+    form(action="")
+        input(type="hidden" id="fullPin") 
+        .myPinCode
+            input(type="tel" maxlength="3" class="form-control")
+            input(type="tel" maxlength="3" class="form-control")
+            input(type="tel" maxlength="3" class="form-control")
+            input(type="tel" maxlength="3" class="form-control")
+        .btn-submit 
+            a(href="../../html/dashboard/home.html").btn.hvr-float-shadow
+                span تسجيل الدخول 
+        .bottom-form-text 
+            h5 ما اشتركت معنا بعد   
+                a(href="../../html/auth/sign-up.html") إشترك الآن    

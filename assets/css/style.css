@@ -504,7 +504,7 @@ body.menu-active:after {
   fill: #fff;
 }
 
-.sign-up-steps-page #step-4-details .form .btn-submit button {
+.sign-up-steps-page #step-4-details .form .btn-submit span {
   width: 100%;
   background: var(--main-color);
   border-radius: 50px;
@@ -512,8 +512,10 @@ body.menu-active:after {
   font-size: 1.3rem;
   max-width: 300px;
   padding: 10px;
-  color: #fff;
   margin-top: 30px;
+}
+.sign-up-steps-page #step-4-details .form .btn-submit span a {
+  text-decoration: none;
 }
 
 #map {

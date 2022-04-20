@@ -3,10 +3,7 @@ extends ../layouts/authLayout.pug
 block content 
     .icon 
         img(src="../../assets/images/icons/waving-hand.svg" alt="")
-    h1 مرحباً بك .  تسجيل جديد 
-    .bottom-form-text.mb-4
-        h5.m-0 لديك حساب؟  
-            a(href="../../html/auth-landing/log-in.html") تسجيل دخول
+    h1 مرحباً . قم بتسجيل الدخول 
     form(action="")
         .input-text-icon-box 
             svg 
@@ -17,6 +14,8 @@ block content
         #error-msg
         #valid-msg
         .btn-submit 
-            a(href="../../html/auth-landing/confirm-sign-up.html").btn.hvr-float-shadow
-                span تسجيل    
-    
+            a(href="../../html/landing/confirm.html").btn.hvr-float-shadow
+                span تسجيل الدخول   
+        .bottom-form-text 
+            h5 ما اشتركت معنا بعد   
+                a(href="../../html/landing/sign-up.html") إشترك الآن   
